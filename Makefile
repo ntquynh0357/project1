@@ -147,6 +147,7 @@ UPROGS=\
 	$U/_dorphan\
 	$U/_test_procinfo\
 	$U/_xargs\
+	$U/_tree\
 
 fs.img: mkfs/mkfs README $(UPROGS)
 	mkfs/mkfs fs.img README $(UPROGS)
