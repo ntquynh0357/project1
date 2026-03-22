@@ -107,3 +107,14 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+uint64
+sys_trace(void)
+{
+  int mask;
+  // Lấy tham số đầu tiên (index 0) gán vào biến mask
+  argint(0, &mask);
+  // Lưu vào tiến trình hiện tại
+  myproc()->trace_mask = mask;
+  return 0;
+}
