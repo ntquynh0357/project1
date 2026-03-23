@@ -275,6 +275,7 @@ kfork(void)
     return -1;
   }
   np->sz = p->sz;
+  np->trace_mask = p->trace_mask;
 
   // copy saved user registers.
   *(np->trapframe) = *(p->trapframe);
