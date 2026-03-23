@@ -145,7 +145,7 @@ UPROGS=\
 	$U/_logstress\
 	$U/_forphan\
 	$U/_dorphan\
-	$U/_test_procinfo\
+	$U/_procinfo\
 	$U/_xargs\
 	$U/_tree\
 	$U/_trace
